@@ -27,9 +27,13 @@ fi
 #....
 
 
-printf "run this script at your own risk"
-printf "I am not responsible for what happens to your system"
-printf "when you install this script"
+printf "run this script at your own risk "
+
+
+printf "I am not responsible for what happens to your system "
+
+
+printf "when you install this script "
 
 
 while true;do
@@ -43,7 +47,7 @@ done
 
 apt update
 
-apt install $(cat /home/"$USERNAME"/Downloads/pkg.txt)
+apt install $(cat /home/"$USERNAME"/Downloads/Debian/pkg.txt)
 
 mv sources.list /etc/apt
 
@@ -68,7 +72,7 @@ case $yn in
         esac
 done
 
-apt remove $cat /home/"$USERNAME"/Downloads/Debian/xremove.txt
+apt remove ($cat /home/"$USERNAME"/Downloads/Debian/xremove.txt)
 
 exit
 
