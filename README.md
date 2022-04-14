@@ -24,7 +24,7 @@ make sure to run as sudo if you are not  it will not work
 
 # I have also updated this repo a bit and made some changes so and added new things to the script 
 
-#For example xfce
+# For example xfce
 
 Their are two files xfce4.sh and xremove.txt the xfce4.sh removes all the uneccsary programs in
 xfce when using debian and installs all the ones i use to run this script do
@@ -45,9 +45,9 @@ sudo ./firefox .sh
 
 # Their are also a ton of web browsers that are in here to choose from as well 
 
-#Chromium,Brave,and chrome
+# Chromium,Brave,and chrome
 
-#Installing Chromium do 
+# Installing Chromium do 
 
 chmod +x chromium.sh
 
@@ -55,7 +55,7 @@ then do
 
 sudo ./chromium.sh
 
-#Installing Brave do 
+# Installing Brave do 
 
 chmod +x brave.sh
 
