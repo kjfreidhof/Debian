@@ -27,13 +27,13 @@ fi
 #....
 
 
-printf "run this script at your own risk "
+printf "run this script at your own risk\n"
 
 
-printf "I am not responsible for what happens to your system "
+printf "I am not responsible for what happens to your system\n"
 
 
-printf "when you install this script "
+printf "when you install this script\n"
 
 
 while true;do
@@ -70,7 +70,6 @@ case $yn in
         [Nn]*)exit;;
         *)printf "please answer yes or no"
         esac
-done
 
 apt remove ($cat /home/"$USERNAME"/Downloads/Debian/xremove.txt)
 
