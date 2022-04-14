@@ -69,7 +69,7 @@ chmod +x chrome.sh
 
 then do 
 
-./chrome.sh
+sudo ./chrome.sh
 
 
 
