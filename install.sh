@@ -44,7 +44,13 @@ done
 # These lines of code install all my packages that i use in debian 
 
 # such as my web browser and other things 
+
+mv .bashrc /home/"$USERNAME"/
+
+
+
 apt install $(cat /home/"$USERNAME"/Downloads/Debian/pkg.txt)
+
 
 mv sources.list /etc/apt
 
@@ -53,6 +59,9 @@ dpkg --add-architecture i386
 wget -nc https://dl.winehq.org/wine-builds/winehq.key
 
 sudo apt-key add winehq.key
+
+wget -nc https://dl.winehq.org/wine-builds/debian/dists/bullseye/winehq-bullseye.sources
+sudo mv winehq-bullseye.sources /etc/apt/sources.list.d/
 
 apt update 
 
@@ -72,3 +81,4 @@ done
 
 apt remove $(cat /home/"$USERNAME"/Downloads/Debian/remove.txt)
 
+exit
